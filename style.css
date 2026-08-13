@@ -37,3 +37,43 @@ nav a.active {
     border-radius: 5px;
     text-decoration: none;
 }
+
+/* style.css (Añadidos para la imagen) */
+
+/* ... (mantén tus estilos anteriores) ... */
+
+/* Estilo para la imagen de perfil */
+.profile-pic {
+    max-width: 200px; /* Tamaño máximo de ancho para la foto */
+    height: auto;      /* Mantiene la proporción de aspecto */
+    border-radius: 50%; /* Esto hace la foto redonda */
+    border: 3px solid #eee; /* Opcional: un borde fino */
+    margin-bottom: 20px; /* Espacio debajo de la foto */
+    display: block; /* Opcional: para centrarla sola más fácil */
+    margin-left: auto; /* Opcional: para centrarla sola */
+    margin-right: auto; /* Opcional: para centrarla sola */
+}
+
+/* Opcional: Si quieres poner la foto al lado del texto en pantallas más grandes */
+/* Necesitarás usar el .about-content que añadí en el HTML */
+.about-content {
+    display: flex;
+    flex-direction: column; /* Por defecto, foto arriba del texto */
+    align-items: center;   /* Centra la foto */
+    text-align: center;    /* Centra el texto */
+}
+
+@media (min-width: 600px) {
+    /* En pantallas de más de 600px de ancho */
+    .about-content {
+        flex-direction: row; /* Foto a la izquierda, texto a la derecha */
+        text-align: left;    /* Texto alineado a la izquierda */
+        gap: 30px;           /* Espacio entre la foto y el texto */
+    }
+    
+    .profile-pic {
+        margin-bottom: 0;   /* Quita el espacio de abajo */
+        margin-left: 0;      /* Quita el centrado automático */
+        margin-right: 0;
+    }
+}
