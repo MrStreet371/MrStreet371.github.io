@@ -163,3 +163,61 @@ sup {
 .report-link a:hover {
     text-decoration: underline;
 }
+
+/* ---------- Página CV (cv.html) ---------- */
+
+.cv-entry {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.cv-date {
+    color: #666;
+}
+
+.cv-body ul {
+    margin: 6px 0 0 0;
+    padding-left: 20px;
+    font-size: 0.95em;
+}
+
+.cv-note {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.cv-refs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.cv-body .report-link {
+    margin-top: 6px;
+}
+
+code {
+    font-size: 0.9em;
+    background: #f4f4f4;
+    padding: 1px 4px;
+    border-radius: 3px;
+}
+
+@media (max-width: 600px) {
+    /* En móvil: fecha encima del contenido, referencias una debajo de otra */
+    .cv-entry,
+    .cv-refs {
+        grid-template-columns: 1fr;
+        gap: 2px;
+    }
+    .cv-refs {
+        gap: 14px;
+    }
+}
+
+/* Enlaces dentro de las entradas del CV, con el azul de la web */
+.cv-body a {
+    color: #0066cc;
+}
