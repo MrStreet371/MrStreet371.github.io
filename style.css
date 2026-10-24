@@ -142,3 +142,24 @@ footer {
 sup {
     line-height: 0;
 }
+
+/* Enlaces a los informes en PDF */
+.report-link {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: -6px;
+}
+
+.report-link a {
+    color: #0066cc;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.report-link a::before {
+    content: "\1F4C4\00A0";   /* icono de documento + espacio */
+}
+
+.report-link a:hover {
+    text-decoration: underline;
+}
