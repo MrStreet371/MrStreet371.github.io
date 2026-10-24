@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Mi Página Personal</title>
+    <title>CV – Cayetano Hernández Sánchez</title>
+    <meta name="description" content="Curriculum vitae of Cayetano Hernández Sánchez, MSc student in Astronomy and Space Physics at Uppsala University.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,19 +21,249 @@
 
     <main>
         <section>
-            <h1>Curriculum Vitae 📄</h1>
-            
-            <!-- Opción A: Botón para descargar en PDF -->
-            <p><a href="CV-CayetanoHS.pdf" download class="btn">Descargar CV en PDF</a></p>
+            <h1>Curriculum Vitae</h1>
+            <p class="subtitle">MSc student in Astronomy &amp; Space Physics · 3D NLTE stellar spectroscopy</p>
 
-            <!-- Opción B: Mostrar experiencia en HTML -->
-            <h2>Educación</h2>
-            <p><strong>Grado / Máster en X</strong> - Universidad X (Año - Presente)</p>
+            <!-- Sube el PDF del CV de doctorado con este nombre exacto: CV-CayetanoHS.pdf -->
+            <p><a href="CV-CayetanoHS.pdf" download class="btn">Download CV (PDF)</a></p>
+        </section>
 
-            <h2>Experiencia</h2>
-            <p><strong>Puesto X</strong> - Empresa/Laboratorio (Año)</p>
+        <!-- ===================== RESEARCH INTERESTS ===================== -->
+        <section>
+            <h2>Research Interests</h2>
+            <p>Stellar spectroscopy and chemical abundances with 3D NLTE modelling; lithium and its
+            isotopes in metal-poor stars and the cosmological lithium problems; stellar atmospheres,
+            convection and spectral line formation; Bayesian inference and high-performance computing
+            in astrophysics.</p>
+        </section>
+
+        <!-- ===================== EDUCATION ===================== -->
+        <section>
+            <h2>Education</h2>
+
+            <div class="cv-entry">
+                <div class="cv-date">2025 – present</div>
+                <div class="cv-body">
+                    <strong>Master's in Physics, Astronomy and Space Physics</strong><br>
+                    Uppsala University, Sweden
+                </div>
+            </div>
+
+            <div class="cv-entry">
+                <div class="cv-date">2025</div>
+                <div class="cv-body">
+                    <strong>Expert in Observational Astrophysics</strong><br>
+                    University of Valencia, Spain
+                </div>
+            </div>
+
+            <div class="cv-entry">
+                <div class="cv-date">2019 – 2024</div>
+                <div class="cv-body">
+                    <strong>Bachelor in Physics</strong><br>
+                    University of Murcia, Spain
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== RESEARCH EXPERIENCE ===================== -->
+        <section>
+            <h2>Research Experience</h2>
+
+            <div class="cv-entry">
+                <div class="cv-date">2026 – present</div>
+                <div class="cv-body">
+                    <strong>Master Thesis</strong>, Uppsala University<br>
+                    <em>The isotopic signature in an extremely Li-rich star</em>
+                    <ul>
+                        <li>Extension of the course project below with an improved 3D NLTE methodology.</li>
+                        <li>Work intended for a first-author publication within a five-person collaboration.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="cv-entry">
+                <div class="cv-date">2026</div>
+                <div class="cv-body">
+                    <strong>Master course project</strong>, Uppsala University<br>
+                    <em>Detecting Lithium-6: a spectroscopic reanalysis of an extremely Li-rich very metal-poor star</em><br>
+                    <span class="cv-note">Supervisors: Dr. Karin Lind and Dr. Ella Xi Wang</span>
+                    <ul>
+                        <li>Reanalysis of the only reported <sup>6</sup>Li detection in a Li-rich very metal-poor
+                        giant, previously based on 1D NLTE models, using self-consistent 3D NLTE spectral synthesis
+                        (<em>Stagger</em> 3D model atmospheres + <em>Balder</em> radiative transfer).</li>
+                        <li>Ran and optimised the 3D NLTE calculations on the Dardel supercomputer (NAISS):
+                        model resolution, snapshot sampling and abundance grid.</li>
+                        <li>Bayesian fitting of the Li I 6707 Å and 6103 Å lines of Subaru/HDS spectra with MCMC
+                        (<code>emcee</code>), finding a substantially lower <sup>6</sup>Li/<sup>7</sup>Li ratio
+                        than previously reported.</li>
+                    </ul>
+                    <!-- Cuando Karin Lind dé el OK, sustituye esta línea por:
+                    <p class="report-link"><a href="reports/lithium6-reanalysis-report.pdf" target="_blank" rel="noopener">Project report (PDF)</a></p> -->
+                    <p class="report-link">Report available on request.</p>
+                </div>
+            </div>
+
+            <div class="cv-entry">
+                <div class="cv-date">Sep – Dec 2024</div>
+                <div class="cv-body">
+                    <strong>Research Assistant</strong>, Uppsala University<br>
+                    <em>Detector rate simulations of pair-annihilation neutrinos produced by neutrino-cooled stars</em><br>
+                    <span class="cv-note">Supervisors: Dr. Andreas Korn and Dr. Erin O'Sullivan</span>
+                    <ul>
+                        <li>Time-dependent rates of e<sup>+</sup>e<sup>−</sup> pair-annihilation neutrinos of all
+                        flavours, including MSW oscillations, for a 20 M<sub>☉</sub> star in JUNO, KamLAND and
+                        Super-Kamiokande-Gd.</li>
+                        <li>Best case: detection up to six months before core collapse at 0.2 kpc; not feasible
+                        beyond 10 kpc.</li>
+                    </ul>
+                    <p class="report-link"><a href="reports/neutrino-detection-report.pdf" target="_blank" rel="noopener">Project report (PDF)</a></p>
+                </div>
+            </div>
+
+            <div class="cv-entry">
+                <div class="cv-date">2024</div>
+                <div class="cv-body">
+                    <strong>Bachelor Thesis</strong>, University of Murcia<br>
+                    <em>Variable Range Hopping simulations in granular metals</em><br>
+                    <span class="cv-note">Supervisors: Miguel Ortuño Ortín and Andrés M. Somoza Gimeno</span>
+                    <ul>
+                        <li>Metropolis–Hastings Monte Carlo simulations, written in Fortran 90, of hopping
+                        conduction in a square lattice of metallic grains with random energies.</li>
+                        <li>Activated (exponential) temperature dependence of the conductivity for weak disorder
+                        and a softer law for strong disorder.</li>
+                    </ul>
+                    <p class="report-link"><a href="reports/vrh-bachelor-thesis-es.pdf" target="_blank" rel="noopener">Bachelor's thesis (PDF, in Spanish)</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== PUBLICATIONS ===================== -->
+        <section>
+            <h2>Publications</h2>
+            <p>No publications yet. My Master's thesis work on <sup>6</sup>Li is aimed at a first-author paper.</p>
+        </section>
+
+        <!-- ===================== SKILLS ===================== -->
+        <section>
+            <h2>Computational Skills</h2>
+
+            <div class="cv-entry">
+                <div class="cv-date"><strong>Programming</strong></div>
+                <div class="cv-body">
+                    <strong>Advanced:</strong> Fortran, Python and C++<br>
+                    <strong>Intermediate:</strong> IDL, SQL, R and MATLAB
+                </div>
+            </div>
+
+            <div class="cv-entry">
+                <div class="cv-date"><strong>Spectroscopy</strong></div>
+                <div class="cv-body">3D NLTE spectral synthesis: <em>Stagger</em> model atmospheres,
+                <em>Balder</em>/<em>Blue</em>, <code>Breidablik</code>; archival high-resolution spectra (Subaru/HDS)</div>
+            </div>
+
+            <div class="cv-entry">
+                <div class="cv-date"><strong>Methods</strong></div>
+                <div class="cv-body">Bayesian inference with MCMC (<code>emcee</code>), χ<sup>2</sup> fitting;
+                HPC runs on the Dardel supercomputer (NAISS)</div>
+            </div>
+
+            <div class="cv-entry">
+                <div class="cv-date"><strong>Astronomy</strong></div>
+                <div class="cv-body">AstroImageJ, PixInsight</div>
+            </div>
+
+            <div class="cv-entry">
+                <div class="cv-date"><strong>Tools</strong></div>
+                <div class="cv-body">LaTeX, Git, Word, Excel</div>
+            </div>
+        </section>
+
+        <!-- ===================== TEACHING & OUTREACH ===================== -->
+        <section>
+            <h2>Teaching &amp; Outreach</h2>
+
+            <div class="cv-entry">
+                <div class="cv-date">2024</div>
+                <div class="cv-body">
+                    <strong>Private Tutor</strong><br>
+                    Physics, chemistry and maths (pre-university level)
+                </div>
+            </div>
+
+            <div class="cv-entry">
+                <div class="cv-date">2020, 2021, 2023</div>
+                <div class="cv-body">
+                    <strong>Science Outreach Collaborator</strong><br>
+                    Collaboration with GTC <em>PaCienciaLaNuestra</em> at Murcia Science Week
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== AWARDS & OTHER ===================== -->
+        <section>
+            <h2>Awards &amp; Other Experience</h2>
+
+            <div class="cv-entry">
+                <div class="cv-date">2021</div>
+                <div class="cv-body">
+                    <strong>Data Analyst Intern</strong><br>
+                    Artificial Intelligence Talentum
+                </div>
+            </div>
+
+            <div class="cv-entry">
+                <div class="cv-date">2019</div>
+                <div class="cv-body">
+                    <strong>Extraordinary Baccalaureate Prize Nominee</strong><br>
+                    Valencian Community
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================== LANGUAGES ===================== -->
+        <section>
+            <h2>Languages</h2>
+
+            <div class="cv-entry">
+                <div class="cv-date"><strong>Spanish</strong></div>
+                <div class="cv-body">Native</div>
+            </div>
+            <div class="cv-entry">
+                <div class="cv-date"><strong>English</strong></div>
+                <div class="cv-body">Certified Cambridge C1 Advanced</div>
+            </div>
+            <div class="cv-entry">
+                <div class="cv-date"><strong>German</strong></div>
+                <div class="cv-body">A1 Goethe Intensive Course</div>
+            </div>
+        </section>
+
+        <!-- ===================== REFERENCES ===================== -->
+        <!-- Sin emails a propósito: en una web pública es mejor no exponer los correos de tus
+             referencias (están en el CV en PDF). -->
+        <section>
+            <h2>References</h2>
+            <div class="cv-refs">
+                <div>
+                    <strong>Dr. Andreas Korn</strong><br>
+                    Senior Lecturer / Associate Professor<br>
+                    Dept. of Physics and Astronomy, Uppsala University
+                </div>
+                <div>
+                    <strong>Dr. Karin Lind</strong><br>
+                    Associate Professor<br>
+                    Department of Astronomy, Stockholm University
+                </div>
+            </div>
+            <p class="cv-note">Contact details in the PDF version of the CV.</p>
         </section>
     </main>
 
+    <footer>
+        <p>&copy; 2026 Cayetano Hernández Sánchez</p>
+    </footer>
+
 </body>
 </html>
+
