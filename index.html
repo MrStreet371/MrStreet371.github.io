@@ -1,57 +1,144 @@
-<!-- index.html (Actualizado) -->
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Personal</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <!-- Menú de navegación (se mantiene igual) -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="cv.html">CV</a></li>
-                <li><a href="personal.html">Personal</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <!-- Sección 1: About Me (AQUÍ AÑADIMOS LA FOTO) -->
-        <section id="about">
-            <div class="about-content">
-                
-                <!-- ESTA ES LA ETIQUETA QUE AÑADE LA IMAGEN -->
-                <img src="assets/me1.jpg" alt="Foto de [Tu Nombre]" class="profile-pic">
-                
-                <div class="about-text">
-                    <h1>Cayetano Hernández Sánchez (Beware! Page under costruction) </h1>
-                    <p>I am a second year astronomy and space physics master student at Uppsala University, with teaching experience in both physics and mathematics. I was born and raised in Spain and I am fluent in both Spanish and English. Outside physics, I spend most of my time reading books and writting short science fiction.   </p>
-                </div>
-            </div>
-        </section>
-
-        <hr>
-
-        <!-- Sección 2: My Work -->
-        <section id="work">
-            <h2>My Work & Research </h2>
-            <p>Summary of my previous and ongoing wotk</p>
-            <ul>
-                <li><strong> Detecting Lithium-6: A spectroscopic reanalysis of a Li-rich very metal poor giant </strong> ... </li>
-                <li><strong>Neutrino detection simulations</strong> ... </li>
-                <li><strong>Variable Range Hopping (VRH) Montecarlo simulations in granular metals</strong> Metropolis Hastings simulations... </li>
-            </ul>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2026 [Tu Nombre]</p>
-    </footer>
-
-</body>
-</html>
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+    color: #333;
+}
+ 
+/* Menú de navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+ 
+nav a {
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+}
+ 
+nav a.active {
+    color: #333;
+    border-bottom: 2px solid #333;
+}
+ 
+/* Botón simple */
+.btn {
+    display: inline-block;
+    background: #0066cc;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+ 
+/* style.css (Añadidos para la imagen) */
+ 
+/* ... (mantén tus estilos anteriores) ... */
+ 
+/* Estilo para la imagen de perfil */
+.profile-pic {
+    max-width: 200px; /* Tamaño máximo de ancho para la foto */
+    height: auto;      /* Mantiene la proporción de aspecto */
+    border-radius: 50%; /* Esto hace la foto redonda */
+    border: 3px solid #eee; /* Opcional: un borde fino */
+    margin-bottom: 20px; /* Espacio debajo de la foto */
+    display: block; /* Opcional: para centrarla sola más fácil */
+    margin-left: auto; /* Opcional: para centrarla sola */
+    margin-right: auto; /* Opcional: para centrarla sola */
+}
+ 
+/* Opcional: Si quieres poner la foto al lado del texto en pantallas más grandes */
+/* Necesitarás usar el .about-content que añadí en el HTML */
+.about-content {
+    display: flex;
+    flex-direction: column; /* Por defecto, foto arriba del texto */
+    align-items: center;   /* Centra la foto */
+    text-align: center;    /* Centra el texto */
+}
+ 
+@media (min-width: 600px) {
+    /* En pantallas de más de 600px de ancho */
+    .about-content {
+        flex-direction: row; /* Foto a la izquierda, texto a la derecha */
+        text-align: left;    /* Texto alineado a la izquierda */
+        gap: 30px;           /* Espacio entre la foto y el texto */
+    }
+    
+    .profile-pic {
+        margin-bottom: 0;   /* Quita el espacio de abajo */
+        margin-left: 0;      /* Quita el centrado automático */
+        margin-right: 0;
+    }
+}
+ 
+/* ---------- Añadidos para el nuevo index (About, Research, Publications) ---------- */
+ 
+.about-text h1 {
+    margin-bottom: 0;
+}
+ 
+.subtitle {
+    color: #666;
+    margin-top: 4px;
+}
+ 
+.contact-links a {
+    margin-right: 15px;
+    color: #0066cc;
+    font-weight: bold;
+    text-decoration: none;
+}
+ 
+.contact-links a:hover {
+    text-decoration: underline;
+}
+ 
+.research-item {
+    margin-bottom: 28px;
+}
+ 
+.research-item h3 {
+    margin-bottom: 0;
+}
+ 
+.meta {
+    color: #666;
+    font-size: 0.9em;
+    margin-top: 2px;
+}
+ 
+.tags span {
+    display: inline-block;
+    background: #eef4fb;
+    color: #0066cc;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    margin: 0 6px 6px 0;
+}
+ 
+hr {
+    border: none;
+    border-top: 2px solid #eee;
+    margin: 30px 0;
+}
+ 
+footer {
+    margin-top: 40px;
+    padding-top: 10px;
+    border-top: 2px solid #eee;
+    color: #888;
+    font-size: 0.9em;
+}
+ 
+/* Evita que los superíndices (6Li) separen las líneas */
+sup {
+    line-height: 0;
+}
